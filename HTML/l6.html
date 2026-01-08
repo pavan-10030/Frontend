@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+</head>
+<body>
+    <h1>Course Registration</h1>
+    <form action="">
+        <fieldset>
+            <legend><b>Personal Details</b></legend>
+            <table>
+                <tr>
+                    <td><label for="">FirstName</label></td>
+                    <td><input type="text" name="FN" placeholder="FirstName" size="15"></td>
+                </tr>
+                <tr>
+                    <td><label for="">LastName</label></td>
+                    <td><input type="text" name="LN" placeholder="LastName" size="15"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Mobile No</label></td>
+                    <td><input type="tel" name="mobileno" placeholder="Mobile no" size="15"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password</label></td>
+                    <td><input type="password" name="password" placeholder="Enter Password" size="15" minlength="5"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Confirm Password</label></td>
+                    <td><input type="password" name="cpassword" placeholder="Confirm Password" size="15" minlength="5"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Date Of Birth</label></td>
+                    <td><input type="date" name="dob" size="15"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender</label></td>
+                    <td><input type="radio" name="gender" value="male"><label for="">Male</label><input type="radio" name="gender" value="female"><label for="">Female</label></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="">Select State</label></td>
+                    <td><select name="state" id="">
+                        <option value="">Select</option>
+                        <option value="1">Andhra Pradesh</option>
+                        <option value="2">Karnataka</option>
+                        <option value="3">Telengana</option>
+                        <option value="4">Tamil Nadu</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="">Upload Picture</label></td>
+                    <td><input type="file" name="photo" size="15"></td>
+                </tr>
+
+            </table>
+            <input type="reset">
+        </fieldset>
+        <fieldset>
+            <legend><b>Course Details</b></legend>
+            <table>
+                <tr>
+                    <td><label for="">Select Course</label></td>
+                    <td><select name="course" id="">
+                        <option value="JFS">Java Full Stack</option>
+                        <option value="PFS">Python Full Stack</option>
+                        <option value="Devops">Devops</option>
+                        <option value=".NET">.NET Stack</option>
+                        <option value="MERN">MERN Stack</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="">Delivery Mode</label></td>
+                    <td><input type="checkbox" value="online" name="mode"><label for="">Online</label><input type="checkbox" value="offline" name="mode"><label for="">Offline</label></td>
+                </tr>
+                <tr>
+                    <td><label for="">Comments</label></td>
+                    <td><textarea name="comments" id="" rows="3" cols="20"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
